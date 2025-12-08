@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Delight Restro</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("navLinks");
+            nav.style.display = nav.style.display === "block" ? "none" : "block";
+        }
+    </script>
+    <style>
+        button{
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="welcomeName">WELCOME SPACE DELIGHT RESTRO</div>
+
+
+<header class="navbar">
+  <div class="logo">
+    <img src="rrr5.jpg" alt="logo">
+    SPACE DELIGHT RESTRO</div>
+
+  <div class="menu-icon" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <nav id="navLinks">
+    <a href="#home">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+
+<script>
+window.onload = function () {
+    const box = document.getElementById("welcomeName");
+    box.style.display = "block";
+
+    setTimeout(() => {
+        box.style.display = "none";
+    }, 3000);
+};
+</script>
+<script>
+function toggleMenu() {
+  var nav = document.getElementById("navLinks");
+  nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+}
+</script>
+
+<!---<header>
+    <div class="logo">
+        <img src="rrr5.jpg" alt="logo">
+        <h2>SPACE DELIGHT RESTRO<br><span>Sikar</span></h2>
+    </div>
+
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    <nav id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>--->
+
+<section class="hero">
+    <div class="content">
+        <h1>BEST QUALITY<br>FOOD</h1>
+        <h2 style="color: yellow;">SPACE DELIGHT RESTRO</h2>
+        <p>OPP. BSNL Office, Behind Nigit Hospital, Sikar (Raj.)</p>
+        <a href="https://maps.app.goo.gl/WJnRBhV2K3VRuHMK6">
+            <button style="background-color: yellow;"><big><b>LOCATION</big></b></button>
+        </a>
+    </div>
+
+    <!--<div class="images">
+        <img src="res1.jpg" class="img">
+        <img src="res2.jpg" class="img">
+        <img src="res3.jpg" class="img">
+    </div>--->
+
+    <div class="gallery-box">
+  <div class="slider">
+    <img src="res1.jpg" class="slide" />
+    <img src="res2.jpg" class="slide" />
+    <img src="res3.jpg" class="slide" />
+  </div>
+</div>
+</section>
+
+<div class="footer">
+    <div class="footer-section">
+        <img src="own.jpg" class="footer-img"><br>
+        <strong>Restaurant Owner</strong><br>
+        Rahul Jangir<br>
+        <span><img src="inst.jpg" class="icon" height="20px" width="20px"> rahul_jangir_54</span>
+    </div>
+
+    <div class="footer-center">
+        <img src="rrr5.jpg" class="footer-img"><br>
+        SPACE DELIGHT RESTRO<br>
+        <span><img src="aaa.jpg" class="icon"height="20px" width="20px"> 6378149628</span><br>
+        <span><img src="inst.jpg" class="icon"height="20px" width="20px"> space_delight_restro</span>
+    </div>
+
+    <div class="footer-section">
+        <img src="ash.jpg" class="footer-img"><br>
+        Mr. Ashish Jakhar<br>
+        <span><img src="inst.jpg" class="icon"height="20px" width="20px"> itz_ashish_jaat__</span>
+    </div>
+</div>
+
+</body>
+</html>
