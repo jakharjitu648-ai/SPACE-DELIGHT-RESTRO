@@ -30,16 +30,19 @@
   const audio = document.getElementById("welcomeAudio");
 
   function playWelcomeAudio() {
-    audio.play();          // audio play
+    audio.play().catch(err => {
+      console.log("Audio play error:", err);
+    });
+    
     document.removeEventListener("touchstart", playWelcomeAudio);
     document.removeEventListener("click", playWelcomeAudio);
   }
 
-  // Mobile: touchstart
-  document.addEventListener("touchstart", playWelcomeAudio);
+  // Mobile touch support
+  document.addEventListener("touchstart", playWelcomeAudio, { once: true });
 
-  // Laptop: click
-  document.addEventListener("click", playWelcomeAudio);
+  // Laptop click support
+  document.addEventListener("click", playWelcomeAudio, { once: true });
 </script>
 
 
@@ -144,3 +147,4 @@ function toggleMenu() {
 </body>
 
 </html>
+
